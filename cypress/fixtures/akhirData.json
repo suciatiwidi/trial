@@ -1,0 +1,34 @@
+{
+  "validUser": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "invalidUser": {
+    "username": "WrongAdmin",
+    "password": "admin123"
+  },
+  "invalidPassword": {
+    "username": "Admin",
+    "password": "wrongpass"
+  },
+  "lowercaseUser": {
+    "username": "admin",
+    "password": "admin123"
+  },
+  "uppercasePassword": {
+    "username": "Admin",
+    "password": "ADMIN123"
+  },
+  "directoryData": {
+    "validEmployeeName": "Peter",
+    "invalidEmployeeName": "xyz123999notfound",
+    "jobTitle": "QA Engineer",
+    "location": "Texas R&D"
+  },
+  "candidateData": {
+    "firstName": "Kirino",
+    "middleName": "Isha",
+    "lastName": "Kalil",
+    "email": "kirishalil@example.com"
+  }
+}

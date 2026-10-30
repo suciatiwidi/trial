@@ -1,0 +1,22 @@
+{
+  "validUser": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "invalidUsername": {
+    "username": "WrongAdmin",
+    "password": "admin123"
+  },
+  "invalidPassword": {
+    "username": "Admin",
+    "password": "wrongpass"
+  },
+  "lowercaseUsername": {
+    "username": "admin",
+    "password": "admin123"
+  },
+  "uppercasePassword": {
+    "username": "Admin",
+    "password": "ADMIN123"
+  }
+}

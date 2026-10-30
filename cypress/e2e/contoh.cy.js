@@ -1,8 +1,19 @@
+import halamanLogin from '../support/loginPage'
+import loginData from '../fixtures/loginData.json'
+
 describe ('Verifikasi Fungsi Login', () => {
-    it('TC001-Login dengan username valid & password valid', () => {
-        cy.visit('https://www.saucedemo.com')
-        cy.get('#user-name').type('standard_user')
-        cy.get('#password').type('secret_sauce')
-        cy.get('.btn_action').click()
+    it('TC001-Login dengan username valid & password valid', () => { 
+        halamanLogin.kunjungiHalaman()
+        halamanLogin.masukanUsername(loginData.usernameValid)
+        halamanLogin.masukanPassword(loginData.passwordValid)
+        halamanLogin.klikTombolLogin()
+        halamanLogin.verifikasiLoginBerhasil()
+    })
+    it('TC002-Login dengan username invalid & password invalid', () => { 
+        halamanLogin.kunjungiHalaman()
+        halamanLogin.masukanUsername(loginData.usernameInvalid)
+        halamanLogin.masukanPassword(loginData.passwordInvalid)
+        halamanLogin.klikTombolLogin()
+        halamanLogin.verifikasiLoginBerhasil()
     })
 })
