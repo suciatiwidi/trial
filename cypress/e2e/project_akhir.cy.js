@@ -215,7 +215,7 @@ describe('Project Akhir: OrangeHRM Automation Test (Login, Directory, Recruitmen
       AkhirIntercepts.interceptRecruitment();
       AkhirRecruitmentPage.navigateToRecruitment();
       cy.get('.oxd-select-text').first().click();
-      cy.get('.oxd-select-dropdown').contains('Software Engineer').click({ force: true });
+      cy.get('.oxd-select-dropdown').contains('Human Resources').click({ force: true });
       cy.get("button[type='submit']").click();
       AkhirRecruitmentPage.verifyCandidateTableVisible();
     });
@@ -228,7 +228,7 @@ describe('Project Akhir: OrangeHRM Automation Test (Login, Directory, Recruitmen
       AkhirIntercepts.interceptRecruitment();
       AkhirRecruitmentPage.navigateToRecruitment();
       cy.get('.oxd-select-text').eq(1).click();
-      cy.get('.oxd-select-dropdown').contains('Initiated').click({ force: true });
+      cy.get('.oxd-select-dropdown').contains('Shortlisted').click({ force: true });
       cy.get("button[type='submit']").click();
       AkhirRecruitmentPage.verifyCandidateTableVisible();
     });

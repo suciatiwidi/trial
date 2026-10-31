@@ -20,9 +20,9 @@
     "password": "ADMIN123"
   },
   "directoryData": {
-    "validEmployeeName": "Peter",
+    "validEmployeeName": "Mario",
     "invalidEmployeeName": "xyz123999notfound",
-    "jobTitle": "QA Engineer",
+    "jobTitle": "Human Resources",
     "location": "Texas R&D"
   },
   "candidateData": {
