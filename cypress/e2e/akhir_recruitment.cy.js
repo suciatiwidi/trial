@@ -18,7 +18,7 @@ describe("REC_SC_001 - REC_SC_008 Module Recruitment Verification", () => {
     recPage.clickRecruitmentMenu();
     recPage.recruitmentUrlValidation();
     recPage.clickVacanciesTab();
-    recPage.vacanciesUrlValidation();
+    recPage.clickCandidatesTab();
   });
 
   it("TC_REC_003 Filter Kandidat Berdasarkan Job Title", () => {

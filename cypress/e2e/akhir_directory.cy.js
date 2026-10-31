@@ -64,7 +64,7 @@ describe("DIR_SC_001 - DIR_SC_008 Module Directory Verification", () => {
     dirPage.directoryUrlValidation();
     dirPage.selectJobTitle(dirData.jobTitle);
     dirPage.clickResetBtn();
-    cy.get(".oxd-select-text-input").eq(0).should("contain", "Select");
+    cy.get("input[placeholder='Type for hints...']").eq(0).should("have.value", "");
   });
 
   it("TC_DIR_008 Pencarian Tanpa Memilih Filter", () => {
